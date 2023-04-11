@@ -1,0 +1,16 @@
+---
+manager:
+  include_meta: False
+  max_workers: 2
+
+providers:
+  powerdns:
+      class: octodns_powerdns.PowerDnsProvider
+      host: 192.168.64.33
+      port: 8081
+      api_key: env/POWERDNS_API_KEY
+
+zones:
+  totozone.com.:
+    targets:
+      - powerdns

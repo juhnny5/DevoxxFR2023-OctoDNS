@@ -1,0 +1,22 @@
+---
+manager:
+  include_meta: False
+  max_workers: 2
+
+providers:
+  zone_records_yaml:
+    class: octodns.provider.yaml.YamlProvider
+    directory: 3demo/zones/
+    default_ttl: 3600
+    enforce_order: False
+  route53:
+    class: octodns_route53.Route53Provider
+    access_key_id: env/AWS_ACCESS_KEY_ID
+    secret_access_key: env/AWS_SECRET_ACCESS_KEY
+    max_changes: 100
+zones:
+  totozone.com.:
+    sources:
+      - zone_records_yaml
+    targets:
+      - route53

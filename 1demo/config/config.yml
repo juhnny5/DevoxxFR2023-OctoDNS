@@ -1,0 +1,23 @@
+---
+manager:
+  include_meta: False
+  max_workers: 2
+
+providers:
+  zone_records_yaml:
+    class: octodns.provider.yaml.YamlProvider
+    directory: 1demo/zones/
+    default_ttl: 3600
+    enforce_order: False
+  powerdns:
+      class: octodns_powerdns.PowerDnsProvider
+      host: 192.168.64.33
+      port: 8081
+      api_key: env/POWERDNS_API_KEY
+
+zones:
+  totozone.com.:
+    sources:
+      - zone_records_yaml
+    targets:
+      - powerdns

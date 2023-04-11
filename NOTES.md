@@ -1,0 +1,23 @@
+# DEVOXX 2023 - Speaker Notes
+
+Speaker: **Julien BRIAULT**
+Date: **07/04/2023**
+
+---
+
+## Commands
+
+```shell
+multipass launch --name powerdns --cloud-init .cloud-init.yaml
+multipass shell powerdns
+```
+
+```shell
+source venv/bin/activate
+source .env
+```
+
+```shell
+pdnsutil list-zone totozone.com
+dig @ns-1821.awsdns-35.co.uk. test.totozone.com
+```

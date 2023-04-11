@@ -1,0 +1,324 @@
+---
+'': 
+  - type: NS
+    value: ns1.totozone.com.
+web1:
+  ttl: 300
+  type: A
+  value: 192.168.64.3
+web2:
+  ttl: 300
+  type: A
+  value: 192.168.64.4
+www:
+  type: CNAM
+  value: totozone.com
+'*':
+  type: CNAME
+  value: www.example.com.
+ns1:
+  ttl: 300
+  type: A
+  value: 192.168.64.33
+mox1:
+  ttl: 300
+  type: A
+  value: 192.168.64.1
+mox2:
+  ttl: 300
+  type: A
+  value: 192.168.64.2
+mox:
+  type: A
+  values:
+    - 192.168.64.1
+    - 192.168.64.2
+test:
+  type: CNAME
+  value: ns1.totozone.com.
+one:
+  ttl: 10800
+  type: A
+  value: 1.1.1.1
+two:
+  ttl: 10800
+  type: A
+  value: 2.2.2.2
+three:
+  ttl: 10800
+  type: A
+  value: 3.3.3.3
+four:
+  ttl: 10800
+  type: A
+  value: 4.4.4.4
+five:
+  ttl: 10800
+  type: A
+  value: 5.5.5.5
+six:
+  ttl: 10800
+  type: A
+  value: 6.6.6.6
+test2:
+  type: CNAME
+  value: two.totozone.com.
+test3:
+  type: CNAME
+  value: three.totozone.com.
+test4:
+  type: CNAME
+  value: four.totozone.com.
+test5:
+  type: CNAME
+  value: five.totozone.com.
+test6:
+  type: CNAME
+  value: six.totozone.com.
+lavada:
+  type: CNAME
+  value: test.totozone.com.
+marvin:
+  type: CNAME
+  ttl: 300
+  value: test.totozone.com.
+dario:
+  type: CNAME
+  value: test.totozone.com.
+windler:
+  type: CNAME
+  value: test.totozone.com.
+kemmer:
+  type: CNAME
+  value: ns1.totozone.com.
+bianka:
+  type: CNAME
+  ttl: 300
+  value: test.totozone.com.
+amani:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+kub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+triston:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+kiehn:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+alayna:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+feeney:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+maryse:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+christian:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+joel:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+john:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+kevin:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+jack:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+matthieu:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+alexis:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+denis:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+julien:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+antoine:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+focal:
+  type: CNAME
+  ttl: 300
+  value: test.totozone.com.
+pioneer:
+  type: CNAME
+  ttl: 300
+  value: test.totozone.com.
+fossa:
+  type: CNAME
+  ttl: 300
+  value: test.totozone.com.
+ubuntu:
+  type: CNAME
+  ttl: 300
+  value: test.totozone.com.
+debian:
+  type: A
+  ttl: 300
+  value: 192.168.1.1
+centos:
+  type: A
+  ttl: 300
+  value: 192.168.1.2
+macos:
+  type: A
+  ttl: 300
+  value: 192.168.1.3
+test2.sub:
+  type: CNAME
+  value: two.totozone.com.
+test3.sub:
+  type: CNAME
+  value: three.totozone.com.
+test4.sub:
+  type: CNAME
+  value: four.totozone.com.
+test5.sub:
+  type: CNAME
+  value: five.totozone.com.
+test6.sub:
+  type: CNAME
+  value: six.totozone.com.
+lavada.sub:
+  type: CNAME
+  value: test.totozone.com.
+marvin.sub:
+  type: CNAME
+  ttl: 300
+  value: test.totozone.com.
+dario.sub:
+  type: CNAME
+  value: test.totozone.com.
+windler.sub:
+  type: CNAME
+  value: test.totozone.com.
+kemmer.sub:
+  type: CNAME
+  value: ns1.totozone.com.
+bianka.sub:
+  type: CNAME
+  ttl: 300
+  value: test.totozone.com.
+amani.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+kub.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+triston.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+kiehn.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+alayna.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+feeney.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+maryse.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+christian.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+joel.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+john.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+kevin.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+jack.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+matthieu.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+alexis.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+denis.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+julien.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+antoine.sub:
+  type: CNAME
+  ttl: 300
+  value: ns1.totozone.com.
+focal.sub:
+  type: CNAME
+  ttl: 300
+  value: test.totozone.com.
+pioneer.sub:
+  type: CNAME
+  ttl: 300
+  value: test.totozone.com.
+fossa.sub:
+  type: CNAME
+  ttl: 300
+  value: test.totozone.com.
+ubuntu.sub:
+  type: CNAME
+  ttl: 300
+  value: test.totozone.com.
+debian.sub:
+  type: A
+  ttl: 300
+  value: 192.168.1.1
+centos.sub:
+  type: A
+  ttl: 300
+  value: 192.168.1.2
+macos.sub:
+  type: A
+  ttl: 300
+  value: 192.168.1.3
